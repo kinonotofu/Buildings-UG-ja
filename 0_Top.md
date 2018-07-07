@@ -54,4 +54,4 @@
 ## [7. 用語集 Glossary](./7_Glossary.md)  
 ## [8. 謝辞 Acknowledgments](./8_Acknowledgments.md)  
 ## [9. 免責事項 Disclaimers](./9_Disclaimers.md)  
-## [10. 著作権とライセンス Copyright and License]  (./10_Copyright_and_License.md)  
+## [10. 著作権とライセンス Copyright and License](./10_Copyright_and_License.md)  

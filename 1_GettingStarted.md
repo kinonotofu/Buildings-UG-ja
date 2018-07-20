@@ -18,7 +18,7 @@ ModelicaのインタラクティブなWebベースのツアーは[http://modelic
 初心者のための音声チュートリアルは[http://spoken-tutorial.org/tutorial-search/?search_foss=OpenModelica&search_language=English](http://spoken-tutorial.org/tutorial-search/?search_foss=OpenModelica&search_language=English)で利用できます。  
   
 ## 1.2. 開発者のための文献  
-新しく熱流体モデルを開発する際にはストリームコネクタの概念を理解することが重要です。ストリームコネクタについては[https://www.modelica.org/documents](https://www.modelica.org/documents)の[Modelicaの言語定義](https://www.modelica.org/documents/ModelicaSpec34.pdf)やFrankeらによる[論文[Fra2009a]]((https://www.modelica.org/events/modelica2009/Proceedings/memorystick/pages/papers/0078/0078.pdf))に説明があります。Buildingsライブラリは、Modelica.Fluidライブラリと類似したモデリング規則や同じ基底クラスを使用しているため、Modelica.Fluidの熱流体モデルの標準化についての[論文[Fra2009b]](https://www.modelica.org/events/modelica2009/Proceedings/memorystick/pages/papers/0077/0077.pdf)を読むことをすすめます。  
+新しく熱流体モデルを開発する際にはストリームコネクタの概念を理解することが重要です。ストリームコネクタについては[https://www.modelica.org/documents](https://www.modelica.org/documents)の[Modelicaの言語定義](https://www.modelica.org/documents/ModelicaSpec34.pdf)やFrankeらによる[論文[Fra2009a]](https://www.modelica.org/events/modelica2009/Proceedings/memorystick/pages/papers/0078/0078.pdf)に説明があります。Buildingsライブラリは、Modelica.Fluidライブラリと類似したモデリング規則や同じ基底クラスを使用しているため、Modelica.Fluidの熱流体モデルの標準化についての[論文[Fra2009b]](https://www.modelica.org/events/modelica2009/Proceedings/memorystick/pages/papers/0077/0077.pdf)を読むことをすすめます。  
 Xogenyの[Modelica Web Reference](http://modref.xogeny.com/)は、Modelica言語の簡潔な概要と説明、さらなる情報のリンクを提供しています。  
   
 ## 1.3. ソフトウェア要件  

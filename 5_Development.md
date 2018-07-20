@@ -28,12 +28,12 @@
   
 ### 5.2.2. 圧力降下  
 圧力降下の式を実装するときは、基底クラス[Buildings.Fluid.BaseClasses.PartialResistance](http://simulationresearch.lbl.gov/modelica/releases/latest/help/Buildings_Fluid_BaseClasses.html#Buildings.Fluid.BaseClasses.PartialResistance). を拡張することをお勧めします。このようなモデルでは[Buildings.Fluid.BaseClasses.FlowModels.basicFlowFunction_dp](http://simulationresearch.lbl.gov/modelica/releases/latest/help/Buildings_Fluid_BaseClasses_FlowModels.html#Buildings.Fluid.BaseClasses.FlowModels.basicFlowFunction_dp)や[ Buildings.Fluid.BaseClasses.FlowModels.basicFlowFunction_m_flow](http://simulationresearch.lbl.gov/modelica/releases/latest/help/Buildings_Fluid_BaseClasses_FlowModels.html#Buildings.Fluid.BaseClasses.FlowModels.basicFlowFunction_m_flow)で実装されているように、ゼロ近傍で正則化された2次関数として流れの抵抗を計算できるようにするべきです。支配方程式は次のようになります。  
-![fig.5.1](./fig/5_1.png "fig.5.1")<!-- コメント -->   
-ニュートン法ベースのソルバーが動かなくなる可能性があるため、ゼロ近傍での正則化を使用することで極限*d*\dot{m}*/dΔp*が\dot{m}*→0*のときに無限大になる傾向を回避しています。流れの抵抗が固定値の場合は通常*k*は*k=*\dot{m}*0/√Δp0*のような公称条件に基づいて計算されます。ここで\dot{m}*0*はパラメータ`m_flow_nominal`に等しく、*Δp0*はパラメータ `dp_nominal`に等しくなっています。  
+![fig.5.1](./fig/5_1.png "fig.5.1")<!-- k = \cfrac{\.m}{\sqrt[]{\Delta p}} -->   
+ニュートン法ベースのソルバーが動かなくなる可能性があるため、ゼロ近傍での正則化を使用することで極限![fig.inline5.1](./fig/inline5_1.png "fig.inline5.1")<!--d\.m/d\Delta p-->が![fig.inline5.2](./fig/inline5_2.png "fig.inline5.2")<!--\.m \to 0-->のときに無限大になる傾向を回避しています。流れの抵抗が固定値の場合は通常*k*は![fig.inline5.3](./fig/inline5_3.png "fig.inline5.3")<!--k=\.m_0/\sqrt[]{\Delta p_0}-->のような公称条件に基づいて計算されます。ここで![fig.inline5.4](./fig/inline5_4.png "fig.inline5.4")<!--\.m_0-->はパラメータ`m_flow_nominal`に等しく、![fig.inline5.5](./fig/inline5_5.png "fig.inline5.5")<!--\Delta p_0-->はパラメータ `dp_nominal`に等しくなっています。  
   
 すべての圧力降下モデルは、線形モデルの形式で方程式を置き換えることができるパラメータも提供する必要があります。  
   
-![fig.5.2](./fig/5_2.png "fig.5.2")<!-- コメント -->  
+![fig.5.2](./fig/5_2.png "fig.5.2")<!-- \.m\.m_0=\bar{k}^2 \Delta p -->  
 |注意|
 |:--|
 |圧力降下の式は体積流量ではなく質量流量の関数として実装されています。いくつかのモデルでは、このことにより質量バランスとエネルギーバランスを切り離すことができます。もしそうしていなければ、質量流量の分布を計算するには温度に依存する密度に関する知識が必要になります。しかも温度はエネルギーバランスを解いた後でのみ分かるのです。|  

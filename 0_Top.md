@@ -24,26 +24,26 @@
 ## [2. ベストプラクティス Best Practice](./2_BestPractice.md)  
 ### 2.1. パッケージの構成  
 ### 2.2. 大規模システムモデルの構築  
-### 2.3. パラメータとメディアパッケージの伝播(Propagating parameters and media packages)  
+### 2.3. パラメータと媒体パッケージの伝播  
 ### 2.4. 熱流体システム  
-#### 2.4.1. 過度の初期化問題と一貫性のない方程式Overdetermined initialization problem and inconsistent equations  
-#### 2.4.2. 流体ジャンクションのモデリングModeling of fluid junctions  
-#### 2.4.3. 流体フローシステムにおけるセンサの使用Use of sensors in fluid flow systems  
-#### 2.4.4. 水などの非圧縮性流体の基準圧力Reference pressure for incompressible fluids such as water  
-#### 2.4.5. デフォルト値（Nominal Values）  
-### 2.5. 反復変数の初期値Start values of iteration variables  
-### 2.6. イベントの回避Avoiding events  
-### 2.7. コントロールControls  
-### 2.8. 遅いシミュレーションをデバッグして修正する方法の例Examples for how to debug and correct slow simulations  
-#### 2.8.1. 状態イベントState events  
-#### 2.8.2. エラー制御を支配する状態変数State variables that dominate the error control  
+#### 2.4.1. 過剰な初期化条件指定と矛盾した方程式  
+#### 2.4.2. 流体の接合部のモデリング  
+#### 2.4.3. 流体フローシステムでのセンサーの使用  
+#### 2.4.4. 水等の非圧縮性流体の基準圧力  
+#### 2.4.5. 公称値  
+### 2.5. 反復変数の初期値  
+### 2.6. イベントの回避  
+### 2.7. 制御  
+### 2.8. 遅いシミュレーションのデバッグと修正の例  
+#### 2.8.1. 状態イベント  
+#### 2.8.2. エラー制御を支配する状態変数  
 ### 2.9. 数値ソルバー  
 ## [3. エラー防止 Work-Arounds](./3_Work-Arounds.md)  
-### 3.1. ステップ変更の回避  
-### 3.2. 数値ループの回避Breaking algebraic loops  
-### 3.3. 直列接続された流れ抵抗の非線形方程式の低減Reducing nonlinear equations of serially connected flow resistances  
-### 3.4. 規定された質量流量  
-### 3.5. 過度に指定された初期化問題の回避  
+### 3.1. ステップ変動の回避  
+### 3.2. 数値ループの分離  
+### 3.3. 直列接続した流動抵抗の非線形方程式の削減  
+### 3.4. 質量流量を規定するモデル  
+### 3.5. 過剰な初期化条件指定の回避  
 ## [4. 前処理と後処理 Pre- and Post-Processing](./4_Pre-AndPost-Processing.md)  
 ## [5. 開発 Development](./5_Development.md)  
 ### 5.1. 貢献(Contributing)  

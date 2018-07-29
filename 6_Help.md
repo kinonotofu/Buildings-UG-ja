@@ -1,6 +1,7 @@
-前ページ [5. 開発 Development](./5_Development.md)　｜　次ページ [7. 用語集 Glossary](./7_Glossary.md)  
+前ページ [5. 開発](./5_Development.md)　｜　次ページ [7. 用語集](./7_Glossary.md)  
+***  
   
-# [6. ヘルプ Help](http://simulationresearch.lbl.gov/modelica/userGuide/help.html)  
+# [6. ヘルプ](http://simulationresearch.lbl.gov/modelica/userGuide/help.html)  
 ## バグレポートを提出する前の確認事項  
 * バグが既知のものではないか
 [https://github.com/lbl-srg/modelica-buildings/issues](https://github.com/lbl-srg/modelica-buildings/issues)を確認してください。  
@@ -18,4 +19,5 @@ Buildingsライブラリに関する一般的な質問には [https://unmethours
     
 BuildingsライブラリではなくModelica自体に関する質問をする際には [https://stackoverflow.com/search?q=modelica](https://stackoverflow.com/search?q=modelica)を参照してください。  
   
-前ページ [5. 開発 Development](./5_Development.md)　｜　次ページ [7. 用語集 Glossary](./7_Glossary.md)
+***  
+前ページ [5. 開発](./5_Development.md)　｜　次ページ [7. 用語集](./7_Glossary.md)

@@ -1,6 +1,7 @@
-前ページ [4. 前処理と後処理 Pre- and Post-Processing](./4_Pre-AndPost-Processing.md)　｜　次ページ [6. ヘルプ Help](./6_Help.md)  
+前ページ [4. 前処理と後処理](./4_Pre-AndPost-Processing.md)　｜　次ページ [6. ヘルプ](./6_Help.md)  
+***  
   
-# 作成中[5. 開発 Development](http://simulationresearch.lbl.gov/modelica/userGuide/development.html)  
+# [5. 開発](http://simulationresearch.lbl.gov/modelica/userGuide/development.html)  
 この章ではBuildingsライブラリの開発について説明します。  
 ## 5.1. 開発への貢献  
 新しいモデルの提供やライブラリの改善方法の提案は大歓迎です。提供されたモデルは、ライブラリに統合してユーザーがアクセス可能にし、さらにそれらを維持するために必要となるため、次のガイドラインに準拠する必要があります。  
@@ -44,4 +45,5 @@
   
 例えば、圧力降下モデルを無効にすることによって、は加熱コイルの圧力降下がゼロになるように加熱コイルと冷却コイルの直列接続を設定し、加熱コイルの圧力降下を圧力冷却コイルの圧力降下モデルに加えてまとめることができます。多くの場合これにより非線形方程式系のサイズを減少させることができます。  
   
-前ページ [4. 前処理と後処理 Pre- and Post-Processing](./4_Pre-AndPost-Processing.md)　｜　次ページ [6. ヘルプ Help](./6_Help.md)
+***  
+前ページ [4. 前処理と後処理](./4_Pre-AndPost-Processing.md)　｜　次ページ [6. ヘルプ](./6_Help.md)

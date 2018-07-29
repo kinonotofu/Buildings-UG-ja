@@ -1,6 +1,7 @@
-前ページ [2. ベストプラクティス Best Practice](./2_BestPractice.md)　｜　次ページ [4. 前処理と後処理 Pre- and Post-Processing](./4_Pre-AndPost-Processing.md)
+前ページ [2. ベストプラクティス](./2_BestPractice.md)　｜　次ページ [4. 前処理と後処理](./4_Pre-AndPost-Processing.md)
+***  
   
-# 作成中[3. エラー防止 Work-Arounds](http://simulationresearch.lbl.gov/modelica/userGuide/workArounds.html)  
+# [3. エラーの回避](http://simulationresearch.lbl.gov/modelica/userGuide/workArounds.html)  
 この章ではモデルの変換、初期化またはシミュレーション中に問題が発生した場合に役立つエラー防止策について説明します。
   
 ## 3.1. ステップ変動の回避  
@@ -90,6 +91,7 @@ To correct it you can remove this equation.
 energyDynamics = Modelica.Fluid.Types.Dynamics.DynamicsFreeInitial;
 massDynamics = Modelica.Fluid.Types.Dynamics.DynamicsFreeInitial;
 ```  
-[水などの非圧縮性流体の参照圧力の節](./2_BestPractice.md)も参照してください。
+[水などの非圧縮性流体の参照圧力の節](./2_BestPractice.md)も参照してください。  
   
-前ページ [2. ベストプラクティス Best Practice](./2_BestPractice.md)　｜　次ページ [4. 前処理と後処理 Pre- and Post-Processing](./4_Pre-AndPost-Processing.md)
+***  
+前ページ [2. ベストプラクティス](./2_BestPractice.md)　｜　次ページ [4. 前処理と後処理](./4_Pre-AndPost-Processing.md)

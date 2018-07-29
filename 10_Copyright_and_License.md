@@ -1,6 +1,7 @@
-前ページ [9. 免責事項 Disclaimers](./9_Disclaimers.md)  
-  
-# [10. 著作権とライセンス Copyright and License](http://simulationresearch.lbl.gov/modelica/userGuide/legal.html)  
+前ページ [9. 免責事項](./9_Disclaimers.md)  
+***  
+
+# [10. 著作権とライセンス](http://simulationresearch.lbl.gov/modelica/userGuide/legal.html)  
 注：ここでは重要な内容を扱うため、ライセンスの翻訳に関してはあくまで参考程度としてください。翻訳ミスがあった場合でも原文の内容に従います。  
   
 Copyright (c) 2012-2018, The Regents of the University of California, Department of Energy contract-operators of the Lawrence Berkeley National Laboratory. All rights reserved.  
@@ -21,4 +22,5 @@ Copyright (c) 2012-2018, The Regents of the University of California, Department
   
 注：このライセンスは、「修正BSD」または「三条項BSD」ライセンスに対応し、「第3項がカリフォルニア大学により追加された」という変更を含みます。  
   
-前ページ [9. 免責事項 Disclaimers](./9_Disclaimers.md)
+***  
+前ページ [9. 免責事項](./9_Disclaimers.md)

@@ -1,6 +1,7 @@
-前ページ [1. はじめに Getting Started](./1_GettingStarted.md)　｜　次ページ [3. エラー防止 Work-Arounds](./3_Work-Arounds.md)  
+前ページ [1. はじめに](./1_GettingStarted.md)　｜　次ページ [3. エラーの回避](./3_Work-Arounds.md)  
+***  
   
-# 作成中[2. ベストプラクティス Best Practice](http://simulationresearch.lbl.gov/modelica/userGuide/bestPractice.html)  
+# 作成中[2. ベストプラクティス](http://simulationresearch.lbl.gov/modelica/userGuide/bestPractice.html)  
 この章ではライブラリユーザーが新しいシステムモデルを作成する際のベストプラクティスを説明しています。ここで取り上げたトピックはModelicaをはじめて扱うユーザーによく見られる問題に基づいています。Modelicaの経験が豊富なユーザーは、この章をスキップしてよいでしょう。  
   
 ## 2.1. パッケージの構成  
@@ -152,8 +153,7 @@ The number of scalar Real equation elements are 58.
 |パラメータ|モデル|説明|
 |:--|:--|:--|
 |*m_flow_nominal*<br>*dp_nominal*|流動抵抗モデル|これらのパラメータを使用してP-Q曲線上の点を定義することができます。他の質量流量については、圧力降下は一般的に相似法則を用いて調整されます。 [PressureDrop](http://simulationresearch.lbl.gov/modelica/releases/latest/help/Buildings_Fluid_FixedResistances.html#Buildings.Fluid.FixedResistances.PressureDrop)を参照してください。|
-|*m_flow_nominal*<br>*m_flow_small*|センサー<br>ボリューム<br>熱交換器|
-これらのモデルの中には、デフォルト値として`m_flow_small=1E-4*abs(m_flow_nominal)`を設定するものがあります。そして*m_flow_small*は、質量流量が*m_flow_small*より小さい場合に方程式を正則化したり置き換えたりするために使用されます。この操作はモデルの数値的性質を改善するために必要となります。設計流量から0.01％以下の流量ではほとんどのモデルの仮定は適用されず、HVACシステムはこの領域では動作しないため、結果の誤差は一般的なアプリケーションでは無視できます。 Modelicaは連続時間領域でシミュレートするのでこのような小さな流量が発生する可能性があり、モデルをゼロまたはほぼゼロの流量で数値的に適切に動作するように実装します。|
+|*m_flow_nominal*<br>*m_flow_small*|センサー<br>ボリューム<br>熱交換器|これらのモデルの中には、デフォルト値として`m_flow_small=1E-4*abs(m_flow_nominal)`を設定するものがあります。そして*m_flow_small*は、質量流量が*m_flow_small*より小さい場合に方程式を正則化したり置き換えたりするために使用されます。この操作はモデルの数値的性質を改善するために必要となります。設計流量から0.01％以下の流量ではほとんどのモデルの仮定は適用されず、HVACシステムはこの領域では動作しないため、結果の誤差は一般的なアプリケーションでは無視できます。 Modelicaは連続時間領域でシミュレートするのでこのような小さな流量が発生する可能性があり、モデルをゼロまたはほぼゼロの流量で数値的に適切に動作するように実装します。|
 |*tau*<br>*m_flow_nominal*|センサー<br>ボリューム<br>熱交換器<br>チラー|Modelicaは連続時間領域でシミュレーションするため、動的モデルは一般に定常状態モデルよりも数値的に効率的となります。しかし、動的モデルは一般に製造業者によって公表されていない製品データを必要とします。例としては装置に含まれる流体の量や熱交換器の重量などがあります。さらに、チラーの配管や熱交換器の輸送遅延などの他の影響は一般には知られておらず、設計段階では一般的に利用できない詳細な形状が必要です。<br>この問題を回避するために、多くのモデルがパラメータとして時定数*tau*をとり、その熱的なまとまりをすべて流体ボリュームに集中させます。時定数*tau*は、ステップ変化の入力を与えたときにコンポーネントの質量流量が*m_flow_nominal*に等しくなる場合に観測できる時定数として理解することができます。これらの2つの値と流体密度*rho*を使用して、ボリュームに特定の時間応答を与えるためにコンポーネントのボリュームを`V=m_flow_nominal tau/rho`のように調整します。ほとんどのコンポーネントでは、エンジニアリングの経験を使って*tau*の妥当な値を見積もることができ、一般的に適用可能な値を使用できる場合にはデフォルト値としてすでに設定してあります。コンポーネントはすでにタウのデフォルト値を設定しています。例としては[WetCoilDiscretized](http://simulationresearch.lbl.gov/modelica/releases/latest/help/Buildings_Fluid_HeatExchangers.html#Buildings.Fluid.HeatExchangers.WetCoilDiscretized)を参照してください。|  
   
 ## 2.5. 反復変数の初期値  
@@ -311,4 +311,5 @@ Integration terminated successfully at T = 1.66e+07
 Dymola 2017は、デフォルトソルバーとして許容誤差1E-4でdasslを使用するように設定されています。この設定を約1E-6程度の許容誤差でradauに変更することを推奨します。これは一般に、熱流体フローシステムのシミュレーションがより速くより堅牢になるためです。  
 また、ここでの許容誤差はローカル積分時間ステップの許容誤差であることに注意してください。ほとんどの常微分方程式ソルバーは、ローカル積分誤差のみを制御し、グローバル積分誤差は制御しません。経験則として、グローバル積分誤差はローカル積分誤差より1桁大きくなります。しかし、グローバル積分誤差の実際の大きさは、微分方程式の安定性に依存しています。極端なケースとして、システムが混沌として制御不能な場合、グローバル積分誤差は急速に大きくなります。  
   
-前ページ [1. はじめに Getting Started](./1_GettingStarted.md)　｜　次ページ [3. エラー防止 Work-Arounds](./3_Work-Arounds.md)
+***  
+前ページ [1. はじめに](./1_GettingStarted.md)　｜　次ページ [3. エラーの回避](./3_Work-Arounds.md)

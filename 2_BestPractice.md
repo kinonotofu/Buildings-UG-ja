@@ -1,7 +1,7 @@
 前ページ [1. はじめに](./1_GettingStarted.md)　｜　次ページ [3. エラーの回避](./3_Work-Arounds.md)  
 ***  
   
-# 作成中[2. ベストプラクティス](http://simulationresearch.lbl.gov/modelica/userGuide/bestPractice.html)  
+# [2. ベストプラクティス](http://simulationresearch.lbl.gov/modelica/userGuide/bestPractice.html)  
 この章ではライブラリユーザーが新しいシステムモデルを作成する際のベストプラクティスを説明しています。ここで取り上げたトピックはModelicaをはじめて扱うユーザーによく見られる問題に基づいています。Modelicaの経験が豊富なユーザーは、この章をスキップしてよいでしょう。  
   
 ## 2.1. パッケージの構成  

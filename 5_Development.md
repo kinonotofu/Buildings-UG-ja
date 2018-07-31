@@ -20,6 +20,7 @@
 ### 5.2.1. 熱流体フロー装置  
 熱流体フロー装置の構成要素を追加するには[Buildings.Fluid.Interface](http://simulationresearch.lbl.gov/modelica/releases/latest/help/Buildings_Fluid_Interfaces.html) パッケージにある拡張可能な基底クラスを使用します。 これらのクラスの説明については、[Buildings.Fluid.Interface.UsersGuide](http://simulationresearch.lbl.gov/modelica/releases/latest/help/Buildings_Fluid_Interfaces_UsersGuide.html#Buildings.Fluid.Interfaces.UsersGuide)を参照してください。
 あるいは、以下のモデルのような単純なモデルを、熱流体フロー装置用の新しいモデルを実装するための元のモデルとして使用することができます。  
+  
 |||
 |:--|:--|
 |[Buildings.Fluid.HeatExchangers.HeaterCooler_u](http://simulationresearch.lbl.gov/modelica/releases/latest/help/Buildings_Fluid_HeatExchangers.html#Buildings.Fluid.HeatExchangers.HeaterCooler_u)|流体の流れに熱を加える装置|
@@ -35,6 +36,7 @@
 すべての圧力降下モデルは、線形モデルの形式で方程式を置き換えることができるパラメータも提供する必要があります。  
   
 ![fig.5.2](./fig/5_2.png "fig.5.2")<!-- \.m\.m_0=\bar{k}^2 \Delta p -->  
+  
 |注意|
 |:--|
 |圧力降下の式は体積流量ではなく質量流量の関数として実装されています。いくつかのモデルでは、このことにより質量バランスとエネルギーバランスを切り離すことができます。もしそうしていなければ、質量流量の分布を計算するには温度に依存する密度に関する知識が必要になります。しかも温度はエネルギーバランスを解いた後でのみ分かるのです。|  

@@ -2,6 +2,8 @@
 ## 概要  
 このドキュメントはアメリカのローレンス・バークレー国立研究所(LBNL)によるModelica言語のBuildingsライブラリの[ユーザーガイド](http://simulationresearch.lbl.gov/modelica/userGuide/index.html)を日本語に訳す作業をしています。なお、ライブラリの中で記載されたドキュメントはここには含まれていません。Buildingsライブラリの概要については[http://simulationresearch.lbl.gov/modelica/](http://simulationresearch.lbl.gov/modelica/)を参照してください。  
 
+## 現在のリリース  
+最新版（2018年10月17日）の[pdf](https://github.com/kinonotofu/Buildings-UG-ja/releases/tag/v1.0/Buildings-UG-ja-v1.0.pdf)または[Markdown](https://github.com/kinonotofu/Buildings-UG-ja/releases/tag/v1.0/Buildings-UG-ja-v1.0-markdown.zip)
 ## 目的  
 初学者が学習の一環として個人的に翻訳して公開しています。ModelicaやBuildingsライブラリへの理解の深い人が行っている活動ではありませんのでご了承ください。  
   
